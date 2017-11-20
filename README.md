@@ -21,4 +21,5 @@ __3. Create CORS rule__
   1. Create new CORS Rule under System Web Services -> REST -> CORS Rules
   2. Choose the Scripted REST API you created in step 2.
   3. Set the domain to Smart Ansatt URL (example: https://smartansattdev.pimdemo.no).
+  4. Set the exposed header to 'Access-Control-Allow-Origin'.
 
