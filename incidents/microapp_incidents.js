@@ -39,15 +39,10 @@
 
 function authWithAtWork(referenceToken) {
   //Already created outbound rest message. Possible to create from scratch in code.
-  var r = new sn_ws.RESTMessageV2('validateAtWork', 'POST');
-  var clientId = "INSERT YOUR CLIENT ID HERE";
-  var clientSecret = "INSERT YOUR CLIENT SECRET HERE";
-  var authValue = "Basic " + GlideStringUtil.base64Encode(clientId+":"+clientSecret);
-  r.setRequestHeader("Authorization", authValue);
-  r.setStringParameterNoEscape("token", referenceToken.replace("Bearer ", ""));
+  var r = new sn_ws.RESTMessageV2('validateAtWork', 'GET');
+  r.setRequestHeader("Authorization", referenceToken.replace("Bearer ", ""));
 
   var res = r.execute();
-
   return res;
 }
 
