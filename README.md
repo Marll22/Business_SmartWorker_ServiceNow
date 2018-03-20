@@ -14,3 +14,8 @@ __2. Create Scripted REST API__
     1. Set HTTP method (GET for all the resources except post_incidents(POST))
     2. Implement the resource (I would recommend starting with the knowledge base for learning purposes). If you did not follow step 1, you have to set the endpoint, headers and requestbody in code when validating with Smart Ansatt (see RestMessageV2 in ServiceNow documentation).
 
+__3. Create CORS rule__
+  1. Create new CORS Rule under System Web Services -> REST -> CORS Rules
+  2. Choose the Scripted REST API you created in step 2.
+  3. Set the domain to Smart Ansatt URL or a '*' as a wildcard (example: *.pimdemo.no).
+  4. Set the exposed header to 'Access-Control-Allow-Origin'.
