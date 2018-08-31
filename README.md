@@ -4,7 +4,7 @@ POC of ServiceNow integration. Scripted REST API on ServiceNow dev instance.
 ## Creating a developer instance
 
 ```
-https://developer.servicenow.com/app.do#!/prog
+https://developer.servicenow.com/
 ```
 
 Creating a ServiceNow integration can be broken down into three steps:
