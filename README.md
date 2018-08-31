@@ -1,6 +1,12 @@
 # Business_SmartWorker_MicroApp_ServiceNow
 POC of ServiceNow integration. Scripted REST API on ServiceNow dev instance.
 
+## Creating a developer instance
+
+```
+https://developer.servicenow.com/app.do#!/prog
+```
+
 Creating a ServiceNow integration can be broken down into three steps:
 
 __1. Create Outbound REST Message (OPTIONAL - the outbound REST Message can also created within the Scripted REST API)__
